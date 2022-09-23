@@ -1,0 +1,11 @@
+<template>
+  <div knockout>
+    <h1>${message}</h1>
+    <button data-bind="click: changeVisibility">Change Visibility</button>
+    <div data-bind="if: isVisible">
+        <span data-bind="text: firstName"></span>
+        <br/>
+        <span data-bind="text: lastName"></span>
+    </div>
+  </div>
+</template>

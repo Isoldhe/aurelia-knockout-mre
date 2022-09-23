@@ -1,0 +1,38 @@
+{
+  "name": "au-knockout-mre",
+  "type": "project:application",
+  "paths": {
+    "root": "src",
+    "resources": "resources",
+    "elements": "resources/elements",
+    "attributes": "resources/attributes",
+    "valueConverters": "resources/value-converters",
+    "bindingBehaviors": "resources/binding-behaviors"
+  },
+  "dependencies": [
+    "knockout",
+    {
+        "name": "aurelia-knockout",
+        "path": "../node_modules/aurelia-knockout/dist/amd",
+        "main": "aurelia-knockout"
+    }
+  ],
+  "transpiler": {
+    "id": "typescript",
+    "fileExtension": ".ts"
+  },
+  "build": {
+    "options": {
+      "server": "dev",
+      "extractCss": "prod",
+      "coverage": false
+    }
+  },
+  "platform": {
+    "hmr": false,
+    "open": false,
+    "port": 8080,
+    "host": "localhost",
+    "output": "dist"
+  }
+}
